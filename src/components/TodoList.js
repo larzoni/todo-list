@@ -47,16 +47,16 @@ function TodoList() {
     setTodos(updatedTodos);
   };
 
-  // Save the to-dos to local storage
-  const saveTodos = () => {
-    localStorage.setItem("todos", JSON.stringify(todos));
-  };
+  // // Save the to-dos to local storage
+  // const saveTodos = () => {
+  //   localStorage.setItem("todos", JSON.stringify(todos));
+  // };
 
-  // Delete the to-dos from local storage
-  const deleteTodos = () => {
-    localStorage.removeItem("todos");
-    setTodos([]);
-  };
+  // // Delete the to-dos from local storage
+  // const deleteTodos = () => {
+  //   localStorage.removeItem("todos");
+  //   setTodos([]);
+  // };
 
   return (
     <div>
@@ -68,8 +68,6 @@ function TodoList() {
         removeTodo={removeTodo}
         updateTodo={updateTodo}
       />
-      <button onClick={saveTodos}>Save</button>
-      <button onClick={deleteTodos}>Delete</button>
     </div>
   );
 }
